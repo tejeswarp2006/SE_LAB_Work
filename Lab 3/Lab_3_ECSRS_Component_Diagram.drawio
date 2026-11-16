@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="coffee-kiosk" name="Lab 3 - Component Diagram">
+    <mxGraphModel dx="1279" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-11" parent="1" style="shape=component;whiteSpace=wrap;html=1;rounded=0;" value="&lt;b&gt;&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Reservation Portal" vertex="1">
+          <mxGeometry height="80" width="210" x="530" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-12" parent="1" style="shape=component;whiteSpace=wrap;html=1;rounded=0;" value="&lt;b&gt;&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Reservation Manager" vertex="1">
+          <mxGeometry height="80" width="210" x="960" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-13" parent="1" style="shape=component;whiteSpace=wrap;html=1;rounded=0;" value="&lt;b&gt;&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Charging Station Manager" vertex="1">
+          <mxGeometry height="80" width="230" x="1370" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-14" parent="1" style="shape=component;whiteSpace=wrap;html=1;rounded=0;" value="&lt;b&gt;&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Dynamic Pricing Service" vertex="1">
+          <mxGeometry height="80" width="230" x="950" y="213" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-15" parent="1" style="shape=component;whiteSpace=wrap;html=1;rounded=0;" value="&lt;b&gt;&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Reservation &amp; Station Database" vertex="1">
+          <mxGeometry height="80" width="230" x="950" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-16" edge="1" parent="1" source="TsoiqS0BAYpLzh9I8Eic-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="TsoiqS0BAYpLzh9I8Eic-12" value="Reservation Interface&lt;br&gt;HTTP/API">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-17" edge="1" parent="1" source="TsoiqS0BAYpLzh9I8Eic-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="TsoiqS0BAYpLzh9I8Eic-13" value="Socket Availability Interface&lt;br&gt;Station Status">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-18" edge="1" parent="1" source="TsoiqS0BAYpLzh9I8Eic-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="TsoiqS0BAYpLzh9I8Eic-14" value="Dynamic Rate Interface&lt;br&gt;Rate Query">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-19" edge="1" parent="1" source="TsoiqS0BAYpLzh9I8Eic-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="TsoiqS0BAYpLzh9I8Eic-15" value="Reservation Data Interface&lt;br&gt;Database Queries">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TsoiqS0BAYpLzh9I8Eic-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" value="&lt;b&gt;Operator monitoring&lt;/b&gt;&lt;br&gt;Charging Station Manager provides real-time socket status to the portal." vertex="1">
+          <mxGeometry height="70" width="300" x="615" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

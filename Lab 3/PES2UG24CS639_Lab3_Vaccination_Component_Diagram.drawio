@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-09-17T18:20:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+<diagram id="vaccination-component" name="Lab 3 - Component Diagram">
+<mxGraphModel dx="1420" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+<mxCell id="title" value="Vaccination Cohort &amp; Dose Scheduling System\nLab 3 - UML Component Diagram"
+style="text;html=0;align=center;verticalAlign=middle;fontSize=20;whiteSpace=wrap;"
+vertex="1" parent="1"><mxGeometry x="300" y="25" width="800" height="55" as="geometry"/></mxCell>
+<mxCell id="portal" value="Citizen / Officer Portal
+Registration - slot selection
+Officer dose recording"
+style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#333333;align=center;verticalAlign=middle;fontSize=13;"
+vertex="1" parent="1">
+<mxGeometry x="70" y="100" width="220" height="90" as="geometry"/>
+</mxCell><mxCell id="auth" value="Authentication &amp; Authorization
+Login - role-based access
+Protected functions"
+style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#333333;align=center;verticalAlign=middle;fontSize=13;"
+vertex="1" parent="1">
+<mxGeometry x="370" y="100" width="230" height="90" as="geometry"/>
+</mxCell><mxCell id="schedule" value="Eligibility &amp; Scheduling Service
+Dose-interval rules
+Eligible slot selection"
+style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#333333;align=center;verticalAlign=middle;fontSize=13;"
+vertex="1" parent="1">
+<mxGeometry x="70" y="310" width="250" height="100" as="geometry"/>
+</mxCell><mxCell id="record" value="Vaccination Record Service
+Citizen record - administered dose
+Vaccination history"
+style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#333333;align=center;verticalAlign=middle;fontSize=13;"
+vertex="1" parent="1">
+<mxGeometry x="400" y="310" width="230" height="100" as="geometry"/>
+</mxCell><mxCell id="cert" value="Certificate Generation Service
+Verified vaccination details
+Digital certificate + QR"
+style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#333333;align=center;verticalAlign=middle;fontSize=13;"
+vertex="1" parent="1">
+<mxGeometry x="720" y="310" width="250" height="100" as="geometry"/>
+</mxCell><mxCell id="verify" value="Certificate Verification Service
+Offline / online verification
+Digital-signature authentication"
+style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#333333;align=center;verticalAlign=middle;fontSize=13;"
+vertex="1" parent="1">
+<mxGeometry x="1040" y="310" width="250" height="100" as="geometry"/>
+</mxCell><mxCell id="db" value="Vaccination Database
+Demographics - doses - slots
+Certificate metadata"
+style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#333333;align=center;verticalAlign=middle;fontSize=13;"
+vertex="1" parent="1">
+<mxGeometry x="420" y="540" width="250" height="100" as="geometry"/>
+</mxCell><mxCell id="trust" value="Verification Trust Store
+Trusted public keys
+Signature validation data"
+style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#333333;align=center;verticalAlign=middle;fontSize=13;"
+vertex="1" parent="1">
+<mxGeometry x="1040" y="540" width="250" height="100" as="geometry"/>
+</mxCell><mxCell id="p_auth_req" value=""
+style="shape=mxgraph.uml2.required-interface;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="350" y="136" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="p_auth_req_label" value="Authentication API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="295" y="156" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="auth_prov" value=""
+style="shape=ellipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="600" y="136" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="auth_prov_label" value="Authentication API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="545" y="156" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="p_sched_req" value=""
+style="shape=mxgraph.uml2.required-interface;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="175" y="292" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="p_sched_req_label" value="Registration / Scheduling API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="120" y="312" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="sched_prov" value=""
+style="shape=ellipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="175" y="410" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="sched_prov_label" value="Registration / Scheduling API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="120" y="430" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="sched_record_req" value=""
+style="shape=mxgraph.uml2.required-interface;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="335" y="350" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="sched_record_req_label" value="Vaccination Record API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="280" y="370" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="record_prov" value=""
+style="shape=ellipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="400" y="350" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="record_prov_label" value="Vaccination Record API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="345" y="370" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="record_db_req" value=""
+style="shape=mxgraph.uml2.required-interface;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="525" y="510" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="record_db_req_label" value="Database Query API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="470" y="530" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="db_prov" value=""
+style="shape=ellipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="525" y="630" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="db_prov_label" value="Database Query API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="470" y="650" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="cert_record_req" value=""
+style="shape=mxgraph.uml2.required-interface;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="700" y="350" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="cert_record_req_label" value="Vaccination Record API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="645" y="370" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="cert_prov" value=""
+style="shape=ellipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="970" y="350" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="cert_prov_label" value="Certificate API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="915" y="370" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="verify_trust_req" value=""
+style="shape=mxgraph.uml2.required-interface;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="1030" y="510" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="verify_trust_req_label" value="Trust Store API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="975" y="530" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="trust_prov" value=""
+style="shape=ellipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="1120" y="630" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="trust_prov_label" value="Trust Store API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="1065" y="650" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="verify_external_prov" value=""
+style="shape=ellipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1.4;" vertex="1" parent="1">
+<mxGeometry x="1290" y="350" width="18" height="18" as="geometry"/>
+</mxCell>
+<mxCell id="verify_external_prov_label" value="Verification API"
+style="text;html=1;align=center;verticalAlign=middle;fontSize=10;whiteSpace=wrap;"
+vertex="1" parent="1">
+<mxGeometry x="1235" y="370" width="128" height="32" as="geometry"/>
+</mxCell><mxCell id="e1" value="Authentication API"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;fontSize=10;"
+edge="1" parent="1" source="p_auth_req" target="auth_prov">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e2" value="Registration / Scheduling"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;fontSize=10;"
+edge="1" parent="1" source="p_sched_req" target="sched_prov">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e3" value="Dose / record lookup"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;fontSize=10;"
+edge="1" parent="1" source="sched_record_req" target="record_prov">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e4" value="Record persistence"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;fontSize=10;"
+edge="1" parent="1" source="record_db_req" target="db_prov">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e5" value="Verified vaccination data"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;fontSize=10;"
+edge="1" parent="1" source="cert_record_req" target="record_prov">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e6" value="Public-key validation"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;fontSize=10;"
+edge="1" parent="1" source="verify_trust_req" target="trust_prov">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="dep1" value="«use»"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;fontSize=10;"
+edge="1" parent="1" source="schedule" target="record">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="dep2" value="«use»"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;fontSize=10;"
+edge="1" parent="1" source="cert" target="record">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="dep3" value="«use»"
+style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;fontSize=10;"
+edge="1" parent="1" source="verify" target="trust">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="legend" value="UML NOTATION
+○ Provided interface (ball)
+◔ Required interface (socket)
+Solid connector = assembly connection
+Dashed arrow = «use» dependency"
+style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f5f5f5;strokeColor=#999999;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;"
+vertex="1" parent="1"><mxGeometry x="70" y="700" width="400" height="105" as="geometry"/></mxCell>
+<mxCell id="reqs" value="REQUIREMENT COVERAGE
+FR-001: dose-interval eligibility
+FR-002: citizen registration
+FR-003: eligible slot selection
+FR-004: officer dose recording
+FR-005: digital certificate + QR
+NFR-001: offline/online signed QR verification &lt;150 ms
+NFR-002: authenticated + authorized access"
+style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=middle;spacingLeft=10;fontSize=11;"
+vertex="1" parent="1"><mxGeometry x="520" y="700" width="590" height="120" as="geometry"/></mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+</mxfile>
